@@ -5,6 +5,9 @@
                         :icon-list="iconList"
                         placeholder="图标"></avue-icon-select>
     </el-form-item>
+    <el-form-item label="是否可以追加">
+      <el-switch v-model="data.duplicatable"></el-switch>
+    </el-form-item>
   </div>
 </template>
 <script>

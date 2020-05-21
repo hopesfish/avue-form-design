@@ -6,6 +6,7 @@ export default [
       label: '分组',
       icon: 'icon-group',
       display: true,
+      duplicatable: false,
       children: {
         column: []
       }
@@ -22,6 +23,23 @@ export default [
         delBtn: true,
         column: []
       }
+    }]
+  },
+  {
+    title: 'vant',
+    list: [{
+      type: 'vtinput',
+      component: 'vant-input',
+      label: '单行文本',
+      icon: 'icon-input',
+      display: true,
+    }, {
+      type: 'vtdate',
+      component: 'vant-calendar',
+      label: '日期',
+      icon: 'icon-date',
+      span: 24,
+      display: true,
     }]
   },
   {

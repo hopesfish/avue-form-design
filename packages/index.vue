@@ -437,6 +437,7 @@ export default {
                 label: col.label,
                 icon: col.icon,
                 prop: col.prop,
+                duplicatable: col.duplicatable
               }
               this.transformToAvueOptions(col.children).then(res => {
                 group.column = res.column
@@ -551,6 +552,7 @@ export default {
                 label: col.label,
                 icon: col.icon,
                 prop: col.prop,
+                duplicatable: col.duplicatable
               }
               this.transAvueOptionsToFormDesigner(col).then(res => {
                 group.children = res
